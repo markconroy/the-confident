@@ -22,23 +22,18 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      margin: 0;
-      padding: 0;
+      /* margin: 0; */
+      /* padding: 0; */
       font-family: cabin, Arial, sans-serif;
       color: var(--color-white);
       background-color: var(--color-primary);
     }
 
-    h1 {
+    main {
       margin: 10vw;
-      font-size: 10rem;
-      line-height: 0.75;
-      /* font-family: serif; */
-      /* font-family: Cardo; */
-      font-family: Cormorant;
-      /* font-family: 'Playfair Display'; */
     }
-    p {
+
+    .launching {
      position: fixed;
      bottom: 1rem;
      right: 1rem;
@@ -47,10 +42,16 @@
      margin: 0;
      color: var(--color-primary);
     }
+
+    .slogan {
+      font-size: 1.25rem;
+      text-align: right;
+    }
     img {
-      max-width: 300px;
+      width: 300px;
     }
   </style>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -61,8 +62,11 @@
 </head>
 
 <body>
-  <img src="logo.svg" alt="The Confident Logo">
-  <p>Launching, September 1st.</p>
+  <main>
+    <img src="logo.svg" alt="The Confident Logo">
+    <p class="slogan">Let's do big things.</p>
+  </main>
+  <p class="launching">Launching, September 1st.</p>
 </body>
 
 </html>

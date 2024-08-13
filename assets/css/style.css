@@ -326,7 +326,7 @@ p {
 }
 
 .slice {
-  padding: var(--spacing-mega);
+  padding-block: var(--spacing-mega);
   font-size: var(--font-size-responsive-heading);
   background-color: var(--color-white);
   color: var(--color-primary);
@@ -358,7 +358,7 @@ p {
 }
 
 .slice hr {
-  width: 250px;
+  width: 125px;
   border-color: var(--color-secondary);
 }
 
@@ -373,6 +373,7 @@ p {
 
 .quote {
   display: flex;
+  margin: 0;
   gap: var(--spacing);
   align-items: start;
   font-size: var(--font-size-responsive-heading);
@@ -387,7 +388,6 @@ p {
 }
 
 .quote cite {
-  text-align: center;
   display: block;
 }
 

@@ -390,3 +390,10 @@ p {
   text-align: center;
   display: block;
 }
+
+.skip-to-content {
+  display: none;
+}
+.skip-to-content:has(a:focus) {
+  display: block;
+}

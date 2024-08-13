@@ -231,13 +231,15 @@ a:focus-visible {
   color: var(--color-white);
 }
 
-.header__logo {
+.header__slogan {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: var(--spacing-mega);
+  padding-block: var(--spacing-mega);
   flex-grow: 1;
+  font-size: var(--font-size-responsive-heading-largest);
 }
 
 .header__content {

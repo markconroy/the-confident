@@ -127,6 +127,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 
@@ -346,6 +347,14 @@ p {
 
 .slice p {
   max-width: 50ch;
+}
+
+.slice a {
+  color: var(--color-secondary);
+}
+
+.slice--dark a {
+  color: var(--color-white);
 }
 
 .slice hr {

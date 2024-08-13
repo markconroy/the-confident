@@ -40,7 +40,7 @@
 :root {
   /* Colours */
   --color-primary: #123456;
-  --color-secondary: #ff34dd;
+  --color-secondary: #eb0032;
 
   /* Grey Scale */
   --color-white: #fff;
@@ -168,6 +168,10 @@ img {
   height: auto;
 }
 
+p {
+  max-width: 80ch;
+}
+
 .alt {
   display: inline-block;
   padding-inline: var(--spacing-smaller);
@@ -201,10 +205,6 @@ img {
   justify-content: space-between;
   align-items: center;
   animation: header_content 5s;
-}
-
-.header__inner p {
-  text-align: center;
 }
 
 @keyframes header_content {
@@ -308,12 +308,25 @@ img {
   padding: var(--spacing);
 }
 
+/* Flows */
+.flow {
+  --flow-size: var(--spacing);
+}
+.flow > * + * {
+  margin-block-start: var(--flow-size);
+}
+
+.flow--large {
+  --flow-size: var(--spacing-largest);
+}
+
 .snap {
   scroll-snap-align: start;
 }
 
 .slice {
   padding: var(--spacing-mega);
+  font-size: var(--font-size-responsive-heading);
   background-color: var(--color-white);
   color: var(--color-primary);
 }
@@ -324,15 +337,29 @@ img {
 }
 
 .slice__inner {
-  min-height: 100dvh;
+  min-height: calc(100dvh - calc(var(--spacing-mega) * 2));
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slice p {
+  max-width: 50ch;
+}
+
+.slice hr {
+  width: 250px;
+  border-color: var(--color-secondary);
+}
+
+.slice--dark hr {
+  border-color: var(--color-white)
 }
 
 .slice__title {
   font-size: var(--font-size-responsive-heading-largest);
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .quote {
@@ -348,4 +375,9 @@ img {
   line-height: 0.75;
   font-size: 100px;
   color: var(--color-secondary);
+}
+
+.quote cite {
+  text-align: center;
+  display: block;
 }

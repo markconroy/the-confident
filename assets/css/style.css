@@ -71,10 +71,26 @@
 
   /* Responsive Font Sizes */
   /* These sizes use the variables from the static sizes */
-  --font-size-responsive-heading: clamp(var(--font-size-medium), 0.78rem + 0.976vw, var(--font-size-large));
-  --font-size-responsive-heading-large: clamp(var(--font-size-large), 1.28rem + 0.976vw, var(--font-size-largest));
-  --font-size-responsive-heading-larger: clamp(var(--font-size-larger), 1.78rem + 0.976vw, var(--font-size-largest));
-  --font-size-responsive-heading-largest: clamp(var(--font-size-largest), 1.841rem + 2.927vw, var(--font-size-mega));
+  --font-size-responsive-heading: clamp(
+    var(--font-size-medium),
+    0.78rem + 0.976vw,
+    var(--font-size-large)
+  );
+  --font-size-responsive-heading-large: clamp(
+    var(--font-size-large),
+    1.28rem + 0.976vw,
+    var(--font-size-largest)
+  );
+  --font-size-responsive-heading-larger: clamp(
+    var(--font-size-larger),
+    1.78rem + 0.976vw,
+    var(--font-size-largest)
+  );
+  --font-size-responsive-heading-largest: clamp(
+    var(--font-size-largest),
+    1.841rem + 2.927vw,
+    var(--font-size-mega)
+  );
 
   /* Line Heights */
   --scale-factor: 1.5;
@@ -118,7 +134,9 @@
   --grid-gap-large: var(--spacing-large);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -139,8 +157,19 @@ body {
   color: var(--color-primary);
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6, .brand {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.brand {
   --scale-factor-calculated: var(--scale-factor);
   line-height: var(--line-height-small);
   font-size: calc(var(--base-font-size) * var(--scale-factor-calculated));
@@ -149,7 +178,9 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1 {
-  --scale-factor-calculated: calc(var(--scale-factor) * var(--scale-factor) * var(--scale-factor));
+  --scale-factor-calculated: calc(
+    var(--scale-factor) * var(--scale-factor) * var(--scale-factor)
+  );
 }
 
 h2 {
@@ -157,10 +188,13 @@ h2 {
 }
 
 h3 {
-  --scale-factor-calculated:  var(--scale-factor);
+  --scale-factor-calculated: var(--scale-factor);
 }
 
-h4, h5, h6, .brand {
+h4,
+h5,
+h6,
+.brand {
   --scale-factor-calculated: 1;
 }
 
@@ -171,6 +205,11 @@ img {
 
 p {
   max-width: 80ch;
+}
+
+a:focus-visible {
+  outline: 2px dashed var(--color-secondary);
+  outline-offset: 2px;
 }
 
 .alt {
@@ -187,7 +226,7 @@ p {
 .header__inner {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  min-height: calc(100dvh - calc(var(--spacing) *  2));
   padding: var(--spacing);
   color: var(--color-white);
 }
@@ -202,10 +241,15 @@ p {
 }
 
 .header__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   animation: header_content 5s;
+}
+
+@media screen and (min-width: 48em) {
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @keyframes header_content {
@@ -233,6 +277,10 @@ p {
 .header__nav a {
   color: var(--color-white);
   text-decoration: none;
+}
+
+.header__nav a:hover {
+  text-decoration: underline;
 }
 
 /* Grids */
@@ -363,7 +411,7 @@ p {
 }
 
 .slice--dark hr {
-  border-color: var(--color-white)
+  border-color: var(--color-white);
 }
 
 .slice__title {

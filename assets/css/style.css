@@ -289,6 +289,20 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.footer {
+  font-size: var(--font-size-small);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.footer__item--logo img {
+  max-width: 15rem;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Grids */
 .grid {
   display: grid;
@@ -306,6 +320,16 @@ a:focus-visible {
 }
 .grid--gap-large {
   gap: var(--grid-gap-large);
+}
+.grid--center {
+  justify-content: center;
+  align-items: center;
+}
+.grid--center-h {
+  justify-content: center;
+}
+.grid--center-v {
+  align-items: center;
 }
 @media screen and (min-width: 48em) {
   .grid--halves,

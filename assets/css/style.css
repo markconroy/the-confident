@@ -225,6 +225,14 @@ a:hover {
   padding-inline: var(--spacing-smaller);
   background-color: var(--color-secondary);
   color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 130%;
+}
+
+.brand {
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 130%;
 }
 
 .header {
@@ -247,11 +255,13 @@ a:hover {
   height: 100%;
   padding-block: var(--spacing-mega);
   flex-grow: 1;
-  font-size: var(--font-size-responsive-heading-largest);
+  font-size: var(--font-size-responsive-heading-larger);
+  line-height: var(--line-height-small);
+  position: relative;
 }
 
 .header__content {
-  animation: header_content 5s;
+  animation: header_content 2s;
 }
 
 @media screen and (min-width: 48em) {

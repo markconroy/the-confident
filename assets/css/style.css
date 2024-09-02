@@ -304,7 +304,7 @@ a:hover {
 }
 
 .footer {
-  font-size: var(--font-size-small);
+  padding: var(--spacing-larger);
   background-color: var(--color-primary);
   color: var(--color-white);
 }

@@ -260,8 +260,12 @@ a:hover {
   padding-block: var(--spacing-mega);
   flex-grow: 1;
   font-size: var(--font-size-responsive-heading-larger);
-  line-height: var(--line-height-small);
   position: relative;
+}
+
+.header__slogan p {
+  text-align: center;
+  text-wrap: balance;
 }
 
 .header__content {

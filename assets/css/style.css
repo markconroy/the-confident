@@ -147,7 +147,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -156,7 +155,6 @@ body {
   line-height: var(--line-height);
   font-family: var(--font-secondary);
   color: var(--color-primary);
-  overscroll-behavior: none;
 }
 
 h1,
@@ -421,10 +419,6 @@ a:hover {
 
 .flow--large {
   --flow-size: var(--spacing-largest);
-}
-
-.snap {
-  scroll-snap-align: start;
 }
 
 .slice {

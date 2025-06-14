@@ -1,1 +1,1 @@
-console.log("%cthe Confident - The leading consultants for all things Drupal, LocalGov Drupal, and design systems.","color: #fff; background: #123456aa; line-height: 2; font-size: 1rem; padding: 1rem; display: block;");
+console.log("%cthe Confident - The leading consultants for all things Drupal, LocalGov Drupal, and design systems.","color: #fff; background: #123456; line-height: 2; font-size: 1.2rem; padding: 1rem; display: block;");

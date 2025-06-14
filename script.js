@@ -1,1 +1,1 @@
-console.log("%cthe Confident - For those who demand the impossible","color: #fff; background: #123456; font-size: 2rem; padding: 1rem;");
+console.log("%cthe Confident - The leading consultants for all things Drupal, LocalGov Drupal, and design systems.","color: #fff; background: #123456aa; line-height: 2; font-size: 1rem; padding: 1rem; display: block;");

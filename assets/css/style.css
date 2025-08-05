@@ -479,6 +479,16 @@ a:hover {
   margin-block-start: var(--spacing-larger);
 }
 
+.slice--testimonials .quote {
+  width: 100%;
+}
+
+.slice--testimonials .quote {
+  margin-block-start: calc(var(--spacing-largest) * 2);
+  padding-block-start: calc(var(--spacing-largest) * 2);
+  border-block-start: 2px dashed var(--color-white);
+}
+
 .quote {
   display: flex;
   margin: 0;

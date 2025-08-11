@@ -486,7 +486,7 @@ a:hover {
 .slice--testimonials .quote {
   margin-block-start: calc(var(--spacing-largest) * 2);
   padding-block-start: calc(var(--spacing-largest) * 2);
-  border-block-start: 2px dashed var(--color-white);
+  border-block-start: 2px dashed var(--color-primary);
 }
 
 .quote {

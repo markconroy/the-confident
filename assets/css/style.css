@@ -469,6 +469,10 @@ a:hover {
   border-color: var(--color-white);
 }
 
+.slice__inner > * + * {
+  margin-block-start: var(--spacing-larger);
+}
+
 .slice__title {
   margin-block-end: var(--spacing-larger);
   font-size: var(--font-size-responsive-heading-largest);
